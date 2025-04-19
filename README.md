@@ -2,6 +2,11 @@
 
 A Model Context Protocol (MCP) server that provides trading functionality through the CCXT library.
 
+![ScreenRecording2025-04-19at17 22 45-ezgif com-speed](https://github.com/user-attachments/assets/1fd98f5d-60b0-449c-98d9-7eca23a9cf0f)
+
+![cursor](https://github.com/user-attachments/assets/d90caaec-e23b-45f7-a6db-2cbfcd4568ce)
+
+
 ## Features
 
 - Fetch ticker data for any symbol
