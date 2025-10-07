@@ -14,5 +14,4 @@ if __name__ == "__main__":
     logging.info(" Starting FastMCP CCXT server...")
 
     # Cloud mode: FastMCP expects an HTTP server on port 8080
-    mcp.run(host="0.0.0.0", port=8080)nfo("Running MCP locally with STDIO transport...")
-    mcp.run(transport="stdio")
+    mcp.run(host="0.0.0.0", port=8080)
