@@ -1,5 +1,5 @@
 from typing import Dict
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 import ccxt
 
 # Create a shared MCP instance
