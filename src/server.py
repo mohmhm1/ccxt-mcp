@@ -3,7 +3,7 @@ from fastmcp import FastMCP
 import ccxt
 
 # Create a shared MCP instance
-mcp = FastMCP("CCXT Trading Server", dependencies=["ccxt"]) 
+mcp = FastMCP("CCXT Trading Server") 
 # Global exchange instances cache
 _exchanges: Dict[str, ccxt.Exchange] = {}
 app = mcp.app
