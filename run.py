@@ -1,4 +1,4 @@
-from src.server import mcp  # imports app automatically
+from src.server import mcp
 import src.tools
 import src.resources
 import src.prompts
@@ -6,13 +6,13 @@ import logging
 import sys
 import os
 
-# For FastMCP Cloud: the platform will use this
-app = mcp.app
-
-# For local debugging
 if __name__ == "__main__":
+    # Log to both console and file
     logging.basicConfig(level=logging.INFO, handlers=[
         logging.StreamHandler(sys.stdout)
     ])
-    logging.getLogger(__name__).info("Running MCP locally with STDIO transport...")
+    logging.info(" Starting FastMCP CCXT server...")
+
+    # Cloud mode: FastMCP expects an HTTP server on port 8080
+    mcp.run(host="0.0.0.0", port=8080)nfo("Running MCP locally with STDIO transport...")
     mcp.run(transport="stdio")
