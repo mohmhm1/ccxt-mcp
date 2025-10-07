@@ -6,3 +6,4 @@ import ccxt
 mcp = FastMCP("CCXT Trading Server", dependencies=["ccxt"]) 
 # Global exchange instances cache
 _exchanges: Dict[str, ccxt.Exchange] = {}
+app = mcp.app
