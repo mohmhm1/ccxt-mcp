@@ -1,9 +1,9 @@
-from typing import Dict
-from fastmcp import FastMCP
+from mcp.server.fastmcp import FastMCP
 import ccxt
+from typing import Dict
 
-# Create a shared MCP instance
-mcp = FastMCP("CCXT Trading Server") 
-# Global exchange instances cache
+# Initialize the MCP server (this is just a definition, not a runner)
+mcp = FastMCP("CCXT Trading Server", dependencies=["ccxt"])
+
+# Optional: cache of exchanges
 _exchanges: Dict[str, ccxt.Exchange] = {}
-app = mcp.app
